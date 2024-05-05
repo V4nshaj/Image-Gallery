@@ -84,7 +84,7 @@ class _ImageScreenState extends State<ImageScreen> {
                         color:
                             Colors.black.withOpacity(0.7), // Background overlay
                         child: Hero(
-                          tag: "fullscreen",
+                          tag: photo.id,
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15.0),
@@ -209,7 +209,7 @@ class _ImageScreenState extends State<ImageScreen> {
                     children: [
                       Expanded(
                         child: Hero(
-                          tag: "fullscreen",
+                          tag: item.id,
                           child: Image.network(
                             item.imageUrl,
                             fit: BoxFit.cover,
